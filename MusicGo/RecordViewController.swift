@@ -15,10 +15,10 @@ import CoreMotion
 
 
 class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-    
+    var midiFile: MidiWriter?
     //motion controller
     lazy var motionManager = CMMotionManager()
-    
+    var acc: Double?
     var previewLayer : AVCaptureVideoPreviewLayer?
     var captureDevice : AVCaptureDevice?
     var videoCaptureOutput = AVCaptureVideoDataOutput()
@@ -32,7 +32,8 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             recordButton.setTitle("Stop", forState: .Normal)
             captureSession.sessionPreset = AVCaptureSessionPreset640x480
             let devices = AVCaptureDevice.devices()
-            
+            midiFile = MidiWriter()
+            midiFile?.headerWriter()
             for device in devices {
                 if (device.hasMediaType(AVMediaTypeVideo)) {
                     if device.position == AVCaptureDevicePosition.Back {
@@ -55,7 +56,9 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                     captureSession.removeInput(input)
                 }
             }
-
+            
+            midiFile?.writeTrackInfo()
+            midiFile?.output()
             captureSession.stopRunning()
             recordButton.setTitle("Record", forState: .Normal)
 
@@ -111,7 +114,9 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         //print(bufferedImage.getPixelColor(CGPoint(x: 5.0, y: 5.0)))
         
         let tmpColor:UIColor = bufferedImage.averageColor()
-        print(tmpColor.hexValue())
+        let rValue = UInt8(CGColorGetComponents(tmpColor.CGColor)[0] * 128)
+        let gValue = UInt8(CGColorGetComponents(tmpColor.CGColor)[1] * 128)
+        midiFile!.writeEvent(127, note: rValue, velocity: gValue)
         dispatch_async(dispatch_get_main_queue()) {
             self.cameraView.image = bufferedImage
         }
@@ -120,7 +125,6 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         motionManager.accelerometerUpdateInterval = 0.1
         motionManager.stopAccelerometerUpdates()
@@ -133,9 +137,7 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                         return
                     }
                     let acc = sqrt(data.acceleration.x * data.acceleration.x + data.acceleration.y * data.acceleration.y + data.acceleration.z * data.acceleration.z)
-                    print("\(acc)")
-//                    print("Y = \(data.acceleration.y)")
-//                    print("Z = \(data.acceleration.z)")
+                    self.acc = acc
                     
                 }
             )

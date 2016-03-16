@@ -16,48 +16,21 @@ class Sound {
     var timer:NSTimer?
     
     init() {
-        createAVMIDIPlayerFromMIDIFIle()
+        createAVMIDIPlayerFromMIDIFIleDLS()
     }
     
-    func createAVMIDIPlayerFromMIDIFIle() {
-        
-        guard let midiFileURL = NSBundle.mainBundle().URLForResource("midi", withExtension: "mid") else {
-            fatalError("\"sibeliusGMajor.mid\" file not found.")
-        }
-        
-//        guard let bankURL = NSBundle.mainBundle().URLForResource("GeneralUser GS MuseScore v1.442", withExtension: "sf2") else {
-//            fatalError("\"GeneralUser GS MuseScore v1.442.sf2\" file not found.")
-//        }
-
-        guard let bankURL = NSBundle.mainBundle().URLForResource("gs_instruments", withExtension: "dls") else {
-            fatalError("\"GeneralUser GS MuseScore v1.442.sf2\" file not found.")
-        }
-        
-        do {
-            try self.midiPlayer = AVMIDIPlayer(contentsOfURL: midiFileURL, soundBankURL: bankURL)
-            print("created midi player with sound bank url \(bankURL)")
-        } catch let error as NSError {
-            print("Error \(error.localizedDescription)")
-        }
-        
-        self.midiPlayer.prepareToPlay()
-        self.midiPlayer.rate = 1.0 // default
-        
-        print("Duration: \(midiPlayer.duration)")
-    }
     
     func createAVMIDIPlayerFromMIDIFIleDLS() {
-        
-        guard let midiFileURL = NSBundle.mainBundle().URLForResource("asd", withExtension: "midi") else {
-            fatalError("\"sibeliusGMajor.mid\" file not found.")
-        }
+    let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] + "/asd.midi"
+
         
         guard let bankURL = NSBundle.mainBundle().URLForResource("gs_instruments", withExtension: "dls") else {
             fatalError("\"gs_instruments.dls\" file not found.")
         }
         
+        print(path)
         do {
-            try self.midiPlayer = AVMIDIPlayer(contentsOfURL: midiFileURL, soundBankURL: bankURL)
+            try self.midiPlayer = AVMIDIPlayer(contentsOfURL: NSURL(fileURLWithPath: path), soundBankURL: bankURL)
             print("created midi player with sound bank url \(bankURL)")
         } catch let error as NSError {
             print("Error \(error.localizedDescription)")

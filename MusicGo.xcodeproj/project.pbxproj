@@ -10,15 +10,13 @@
 		6FA02C0C1C997F60009EF65F /* playerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA02C0B1C997F60009EF65F /* playerController.swift */; };
 		6FA02C0E1C997F95009EF65F /* MIDISampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA02C0D1C997F95009EF65F /* MIDISampler.swift */; };
 		6FA02C101C997F9A009EF65F /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA02C0F1C997F9A009EF65F /* Sound.swift */; };
-		6FA02C131C998046009EF65F /* asd.midi in Resources */ = {isa = PBXBuildFile; fileRef = 6FA02C121C998046009EF65F /* asd.midi */; };
 		6FA02C151C99804E009EF65F /* GeneralUser GS MuseScore v1.442.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 6FA02C141C99804E009EF65F /* GeneralUser GS MuseScore v1.442.sf2 */; };
 		6FA02C171C998053009EF65F /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = 6FA02C161C998053009EF65F /* gs_instruments.dls */; };
-		6FA02C191C998058009EF65F /* midi.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6FA02C181C998058009EF65F /* midi.mid */; };
-		6FA02C1B1C99805E009EF65F /* ntbldmtn.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6FA02C1A1C99805E009EF65F /* ntbldmtn.mid */; };
 		78758E6E4A48F187D39E509B /* Pods_MusicGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAF23E0E58EA399F08BD46D /* Pods_MusicGo.framework */; };
 		C17617861C98DF0F008412EB /* YYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617851C98DF0F008412EB /* YYZButton.swift */; };
 		C17617881C98FFA2008412EB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617871C98FFA2008412EB /* RecordViewController.swift */; };
 		C176178A1C990859008412EB /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617891C990859008412EB /* ImageExt.swift */; };
+		C17676241C9985FB004F7D88 /* MidiWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17676231C9985FB004F7D88 /* MidiWriter.swift */; };
 		C17AABF41C98D99C00CC83CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AABF31C98D99C00CC83CF /* AppDelegate.swift */; };
 		C17AABF91C98D99C00CC83CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17AABF71C98D99C00CC83CF /* Main.storyboard */; };
 		C17AABFB1C98D99C00CC83CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17AABFA1C98D99C00CC83CF /* Assets.xcassets */; };
@@ -33,14 +31,12 @@
 		6FA02C0B1C997F60009EF65F /* playerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerController.swift; sourceTree = "<group>"; };
 		6FA02C0D1C997F95009EF65F /* MIDISampler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDISampler.swift; sourceTree = "<group>"; };
 		6FA02C0F1C997F9A009EF65F /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		6FA02C121C998046009EF65F /* asd.midi */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = asd.midi; sourceTree = "<group>"; };
 		6FA02C141C99804E009EF65F /* GeneralUser GS MuseScore v1.442.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeneralUser GS MuseScore v1.442.sf2"; sourceTree = "<group>"; };
 		6FA02C161C998053009EF65F /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
-		6FA02C181C998058009EF65F /* midi.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = midi.mid; sourceTree = "<group>"; };
-		6FA02C1A1C99805E009EF65F /* ntbldmtn.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = ntbldmtn.mid; sourceTree = "<group>"; };
 		C17617851C98DF0F008412EB /* YYZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYZButton.swift; sourceTree = "<group>"; };
 		C17617871C98FFA2008412EB /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		C17617891C990859008412EB /* ImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		C17676231C9985FB004F7D88 /* MidiWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiWriter.swift; sourceTree = "<group>"; };
 		C17AABF01C98D99C00CC83CF /* MusicGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AABF31C98D99C00CC83CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17AABF81C98D99C00CC83CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,11 +74,8 @@
 		6FA02C111C998036009EF65F /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				6FA02C1A1C99805E009EF65F /* ntbldmtn.mid */,
-				6FA02C181C998058009EF65F /* midi.mid */,
 				6FA02C161C998053009EF65F /* gs_instruments.dls */,
 				6FA02C141C99804E009EF65F /* GeneralUser GS MuseScore v1.442.sf2 */,
-				6FA02C121C998046009EF65F /* asd.midi */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -155,6 +148,7 @@
 				C17AAC0B1C98DE6B00CC83CF /* ColorTheme.swift */,
 				C17AAC0C1C98DE6B00CC83CF /* ViewExt.swift */,
 				C17617891C990859008412EB /* ImageExt.swift */,
+				C17676231C9985FB004F7D88 /* MidiWriter.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -202,7 +196,7 @@
 				TargetAttributes = {
 					C17AABEF1C98D99C00CC83CF = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = ZDYK6ZDCJ3;
+						DevelopmentTeam = F697GBXU4H;
 					};
 				};
 			};
@@ -230,13 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17AABFE1C98D99C00CC83CF /* LaunchScreen.storyboard in Resources */,
-				6FA02C131C998046009EF65F /* asd.midi in Resources */,
 				C17AABFB1C98D99C00CC83CF /* Assets.xcassets in Resources */,
 				6FA02C151C99804E009EF65F /* GeneralUser GS MuseScore v1.442.sf2 in Resources */,
 				6FA02C171C998053009EF65F /* gs_instruments.dls in Resources */,
-				6FA02C191C998058009EF65F /* midi.mid in Resources */,
 				C17AABF91C98D99C00CC83CF /* Main.storyboard in Resources */,
-				6FA02C1B1C99805E009EF65F /* ntbldmtn.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +290,7 @@
 				C176178A1C990859008412EB /* ImageExt.swift in Sources */,
 				C17617861C98DF0F008412EB /* YYZButton.swift in Sources */,
 				6FA02C0C1C997F60009EF65F /* playerController.swift in Sources */,
+				C17676241C9985FB004F7D88 /* MidiWriter.swift in Sources */,
 				C17AAC0E1C98DE6B00CC83CF /* ViewExt.swift in Sources */,
 				6FA02C101C997F9A009EF65F /* Sound.swift in Sources */,
 				C17AAC0D1C98DE6B00CC83CF /* ColorTheme.swift in Sources */,
@@ -420,7 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zl.MusicGo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.c2fun.MusicGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -435,7 +427,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zl.MusicGo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.c2fun.MusicGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

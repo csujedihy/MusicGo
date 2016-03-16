@@ -17,27 +17,44 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     var videoCaptureOutput = AVCaptureVideoDataOutput()
     let captureSession = AVCaptureSession()
     
+    @IBOutlet weak var recordButton: YYZButton!
     @IBOutlet weak var cameraView: UIImageView!
     
     @IBAction func recordOnTap(sender: AnyObject) {
-        
-        captureSession.sessionPreset = AVCaptureSessionPreset640x480
-        let devices = AVCaptureDevice.devices()
-        
-        for device in devices {
-            if (device.hasMediaType(AVMediaTypeVideo)) {
-                if device.position == AVCaptureDevicePosition.Back {
-                    captureDevice = device as? AVCaptureDevice
-                    if captureDevice != nil {
-                        beginSession()
-                    } else {
-                        print("Can't access camera")
+        if recordButton.titleLabel?.text == "Record" {
+            recordButton.setTitle("Stop", forState: .Normal)
+            captureSession.sessionPreset = AVCaptureSessionPreset640x480
+            let devices = AVCaptureDevice.devices()
+            
+            for device in devices {
+                if (device.hasMediaType(AVMediaTypeVideo)) {
+                    if device.position == AVCaptureDevicePosition.Back {
+                        captureDevice = device as? AVCaptureDevice
+                        if captureDevice != nil {
+                            beginSession()
+                            return
+                        } else {
+                            print("Can't access camera")
+                        }
                     }
-                }   
-            } else {
-                print("Can't access camera")
+                } else {
+                    print("Can't access camera")
+                }
             }
+        
+        } else {
+            if let inputs = captureSession.inputs as? [AVCaptureDeviceInput] {
+                for input in inputs {
+                    captureSession.removeInput(input)
+                }
+            }
+
+            captureSession.stopRunning()
+            recordButton.setTitle("Record", forState: .Normal)
+
+        
         }
+
     }
     
     func beginSession() {
@@ -75,13 +92,15 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     // Frame buffer capture delegate. Write your image filtering algorithm here to get music characters.
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
-        print("frame show")
         let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
         let cameraImage = CIImage(CVPixelBuffer: pixelBuffer!)
-        let bufferedImage = UIImage(CIImage: cameraImage)
-        dispatch_async(dispatch_get_main_queue())
-            {
-                self.cameraView.image = bufferedImage
+        let context = CIContext()
+        
+        let bufferedImage = UIImage(CGImage: context.createCGImage(cameraImage, fromRect: cameraImage.extent))
+        
+        print(bufferedImage.getPixelColor(CGPoint(x: 5.0, y: 5.0)))
+        dispatch_async(dispatch_get_main_queue()) {
+            self.cameraView.image = bufferedImage
         }
     }
     

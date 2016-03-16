@@ -10,6 +10,7 @@
 		78758E6E4A48F187D39E509B /* Pods_MusicGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAF23E0E58EA399F08BD46D /* Pods_MusicGo.framework */; };
 		C17617861C98DF0F008412EB /* YYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617851C98DF0F008412EB /* YYZButton.swift */; };
 		C17617881C98FFA2008412EB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617871C98FFA2008412EB /* RecordViewController.swift */; };
+		C176178A1C990859008412EB /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617891C990859008412EB /* ImageExt.swift */; };
 		C17AABF41C98D99C00CC83CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AABF31C98D99C00CC83CF /* AppDelegate.swift */; };
 		C17AABF91C98D99C00CC83CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17AABF71C98D99C00CC83CF /* Main.storyboard */; };
 		C17AABFB1C98D99C00CC83CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17AABFA1C98D99C00CC83CF /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		378DDFCD41E7AE25E1905B66 /* Pods-MusicGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicGo/Pods-MusicGo.release.xcconfig"; sourceTree = "<group>"; };
 		C17617851C98DF0F008412EB /* YYZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYZButton.swift; sourceTree = "<group>"; };
 		C17617871C98FFA2008412EB /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		C17617891C990859008412EB /* ImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
 		C17AABF01C98D99C00CC83CF /* MusicGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AABF31C98D99C00CC83CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17AABF81C98D99C00CC83CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				C17AAC0B1C98DE6B00CC83CF /* ColorTheme.swift */,
 				C17AAC0C1C98DE6B00CC83CF /* ViewExt.swift */,
+				C17617891C990859008412EB /* ImageExt.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C176178A1C990859008412EB /* ImageExt.swift in Sources */,
 				C17617861C98DF0F008412EB /* YYZButton.swift in Sources */,
 				C17AAC0E1C98DE6B00CC83CF /* ViewExt.swift in Sources */,
 				C17AAC0D1C98DE6B00CC83CF /* ColorTheme.swift in Sources */,

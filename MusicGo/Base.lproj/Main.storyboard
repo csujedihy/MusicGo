@@ -116,6 +116,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cameraView" destination="Zot-qK-4ct" id="16b-qU-UfP"/>
+                        <outlet property="recordButton" destination="69j-6y-pxe" id="pt5-iw-gnq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RM-2E-Bcb" userLabel="First Responder" sceneMemberID="firstResponder"/>

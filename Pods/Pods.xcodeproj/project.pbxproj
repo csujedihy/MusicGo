@@ -6,43 +6,429 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B2480A4149FA183BFEAA2C974BDF0A /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A597A62A5B633FA29769DA171083410 /* UIColor+Chameleon.m */; };
+		097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E245FB76D2BC3E20116530E079D3F24 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 68419FAA771DA9A34C37DEB51DD8EF63 /* ChameleonConstants.m */; };
+		14166AE8334CDCEB4F4D8B069FBB554A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
+		15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D2086D80B1E6364E18FDF8DCE29AD /* UIImage+ChameleonPrivate.m */; };
+		24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FF5354D02E3596394213DB26462F /* NSArray+Chameleon.m */; };
+		4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD4139979308ACDB3313FC473342C6F /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BD1A9D810F01F53BFFC3490E258951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CA2B5ED9A2600599E658FA7BC6FFDC2C /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6AA16EF10215FE66328A3183EB6C8 /* UINavigationController+Chameleon.m */; };
+		4EF9E913947134DCEC57958453772402 /* SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65565042442811023FC68C059FE62F80 /* SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E01FCF7B04283D4F02E60165FB80FBB /* UIViewController+Chameleon.m */; };
+		5AB75030A78AD777F2F54A3E3149E031 /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BDCADD01F043DFE89A31FA5D7286FC /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A225FCFF335A4415B7F1FEC97EC4BF68 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1F7B9B04EB412630CF9C7C2FDABDBD /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D761F64AB31447468D85FEE552E6DC2F /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = FF565B898A37DC807EF6E20E68B154E6 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 01DD3C185CE7B2874A264C92EF8C135F /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 362EC658B7E3D71AEC79A0CE54B925EE /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8828987A749F59E8A7B841F9B280C176 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6A774231562A3EC3AEADCBA5E52E93 /* SWRevealViewController.m */; };
+		9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 30554103DE8065317852196EFDFFDDB7 /* Chameleon_.m */; };
+		9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7636252ECF7F061C84697F381B313500 /* UILabel+Chameleon.m */; };
+		9CD81585A78B44D377171FCEDEFAA830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
+		A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F807134A6882B9C02D3129387447B13 /* ChameleonShorthand.swift */; };
+		A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DC87AC0904CA9AF1DF9B06216133B1 /* UIButton+Chameleon.m */; };
+		A4B1EB0240CF213D1230D97A85D6830D /* Pods-MusicGo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BB80F8D16D5368395EB39FA05B90A0 /* Pods-MusicGo-dummy.m */; };
+		A6EFE32527A3AB3B1EA032D159B09470 /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E07D4B5570459C293908F77EA8C6 /* SWRevealViewController-dummy.m */; };
+		AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 081C127D5F2DF672F7A410C5160E6527 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EFF3353D40704E323A7D284E044A543 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AD696C44A2ECD5B854E80B1264BD24 /* UIView+ChameleonPrivate.m */; };
+		C0FD11B6AB25E69F8F97068D721DB036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 935487202921EEE8972D783B63DDC806 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC11A0B8DAA75752C9863651F1E1B082 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C0DB6823B5874866DCDE09BF2C7DDA /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E8DD12E2D33718F270EA27429EEC5 /* UIAppearance+Swift.m */; };
+		D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE482F0689B2EA09E73ABBB416E95772 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D44E738F58267D5639420D9AF28153B1 /* Pods-MusicGo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DF6F705E0CF5F801D5867442B62628 /* Pods-MusicGo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71628C13400EF04CD9E67A9B562C29A4 /* UIColor+ChameleonPrivate.m */; };
+		E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D84501966AD4EEF3D0AB50D80A8C8 /* ChameleonFramework-dummy.m */; };
+		E197C5199E24876F592836465AF6B2F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		EB83AA6D0A112741AEA3AFCBF27360DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
+		FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6162B655104AB94C4EFFF6CF475C493C /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B8B5EFDEEED79267646B493CA00ED2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CC1484528A6C6EEAD592323868741CC;
+			remoteInfo = SWRevealViewController;
+		};
+		C326BEC960874B64BD3FF72D3609D87A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5172ACAB7FEA22813859DC97CA0AA16F;
+			remoteInfo = ChameleonFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01DD3C185CE7B2874A264C92EF8C135F /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		0804A4009661C29AC650067A9214565D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081C127D5F2DF672F7A410C5160E6527 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0F4E8DD12E2D33718F270EA27429EEC5 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		14D4C6D40CA81A5EC373AE997B6A6A45 /* Pods-MusicGo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusicGo-resources.sh"; sourceTree = "<group>"; };
+		19B06B28BB9AC326ABBA55A0B8431F79 /* SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWRevealViewController.modulemap; sourceTree = "<group>"; };
+		1B07CB40F64F2C7A5BF669C29424EA22 /* Pods-MusicGo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MusicGo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B6D2086D80B1E6364E18FDF8DCE29AD /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		1C1F7B9B04EB412630CF9C7C2FDABDBD /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		1E01FCF7B04283D4F02E60165FB80FBB /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		2A469890267CD9CC761DA30A7C7A8268 /* Pods-MusicGo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MusicGo.modulemap"; sourceTree = "<group>"; };
+		2AEA8A8F3C1559076442033EA5E7619A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C523D88CD8468A10DBE14E2DF9561BE /* Pods_MusicGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE6AA16EF10215FE66328A3183EB6C8 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		2EFF3353D40704E323A7D284E044A543 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		30554103DE8065317852196EFDFFDDB7 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		362EC658B7E3D71AEC79A0CE54B925EE /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		3A597A62A5B633FA29769DA171083410 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		3D01FF5354D02E3596394213DB26462F /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		3E245FB76D2BC3E20116530E079D3F24 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		3EEBF0493650CC261A000F6134D03B67 /* Pods-MusicGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusicGo.debug.xcconfig"; sourceTree = "<group>"; };
+		4394005D184980610C967D8C94DA097F /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4F3D7A3DA99D211D1F6FAE7FA0EBBE6C /* SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWRevealViewController.xcconfig; sourceTree = "<group>"; };
+		4F807134A6882B9C02D3129387447B13 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		5270E07D4B5570459C293908F77EA8C6 /* SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
+		54AD696C44A2ECD5B854E80B1264BD24 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		5DD4139979308ACDB3313FC473342C6F /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		6162B655104AB94C4EFFF6CF475C493C /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		65565042442811023FC68C059FE62F80 /* SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
+		68419FAA771DA9A34C37DEB51DD8EF63 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		710D84501966AD4EEF3D0AB50D80A8C8 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		71628C13400EF04CD9E67A9B562C29A4 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		7636252ECF7F061C84697F381B313500 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		8272E1CBCBC8D2187FA2FA13346E0CB5 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		88DF6F705E0CF5F801D5867442B62628 /* Pods-MusicGo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MusicGo-umbrella.h"; sourceTree = "<group>"; };
+		92A118F01AF6874B8876E056C8F62A99 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		935487202921EEE8972D783B63DDC806 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		A225FCFF335A4415B7F1FEC97EC4BF68 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		B51BB480013AD3796DB628359C8D4E03 /* SWRevealViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWRevealViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78F53EB980675B3D112DE76CF81AF96 /* Pods-MusicGo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusicGo-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB0D6F92BAE0A909390DE8CBB890BD68 /* Pods-MusicGo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MusicGo-acknowledgements.plist"; sourceTree = "<group>"; };
+		BEE9AC0D1A5C46F3D8A4D4D57A8961A0 /* Pods-MusicGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusicGo.release.xcconfig"; sourceTree = "<group>"; };
+		CA2B5ED9A2600599E658FA7BC6FFDC2C /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1DC87AC0904CA9AF1DF9B06216133B1 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		D5C0DB6823B5874866DCDE09BF2C7DDA /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		D761F64AB31447468D85FEE552E6DC2F /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		E6B2480A4149FA183BFEAA2C974BDF0A /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		E6BB80F8D16D5368395EB39FA05B90A0 /* Pods-MusicGo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MusicGo-dummy.m"; sourceTree = "<group>"; };
+		EB6A774231562A3EC3AEADCBA5E52E93 /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		ECA333D8A5643D50CA8DB34CFEA9BDD9 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE482F0689B2EA09E73ABBB416E95772 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		F1BDCADD01F043DFE89A31FA5D7286FC /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		F309C5E57CFCC0C7E1B1CEF0C94F00C2 /* SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
+		FD2C30221DA0CC6909E10FB5FFF2B859 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF565B898A37DC807EF6E20E68B154E6 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+/* Begin PBXFrameworksBuildPhase section */
+		A7F1B86793FEDDE5CB7E0B341EA27E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB83AA6D0A112741AEA3AFCBF27360DB /* CoreGraphics.framework in Frameworks */,
+				C0FD11B6AB25E69F8F97068D721DB036 /* Foundation.framework in Frameworks */,
 			);
-			name = Products;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		C23DC2C0D2254BB6FB036D1D7EA90D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC11A0B8DAA75752C9863651F1E1B082 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1A73E30C8322A70D5DCD63B04CAE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD81585A78B44D377171FCEDEFAA830 /* CoreGraphics.framework in Frameworks */,
+				46BD1A9D810F01F53BFFC3490E258951 /* Foundation.framework in Frameworks */,
+				14166AE8334CDCEB4F4D8B069FBB554A /* QuartzCore.framework in Frameworks */,
+				E197C5199E24876F592836465AF6B2F1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9203A0FF197B8764CD853B6EE3A159E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DFC539C0A3BF70BDD6B412ADF9C9D43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C30221DA0CC6909E10FB5FFF2B859 /* Info.plist */,
+				19B06B28BB9AC326ABBA55A0B8431F79 /* SWRevealViewController.modulemap */,
+				4F3D7A3DA99D211D1F6FAE7FA0EBBE6C /* SWRevealViewController.xcconfig */,
+				5270E07D4B5570459C293908F77EA8C6 /* SWRevealViewController-dummy.m */,
+				F309C5E57CFCC0C7E1B1CEF0C94F00C2 /* SWRevealViewController-prefix.pch */,
+				65565042442811023FC68C059FE62F80 /* SWRevealViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWRevealViewController";
+			sourceTree = "<group>";
+		};
+		24A4B5A23679A86E7DF2DC0819E50708 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				362EC658B7E3D71AEC79A0CE54B925EE /* Chameleon.h */,
+				FF565B898A37DC807EF6E20E68B154E6 /* Chameleon_.h */,
+				30554103DE8065317852196EFDFFDDB7 /* Chameleon_.m */,
+				3E245FB76D2BC3E20116530E079D3F24 /* ChameleonConstants.h */,
+				68419FAA771DA9A34C37DEB51DD8EF63 /* ChameleonConstants.m */,
+				CA2B5ED9A2600599E658FA7BC6FFDC2C /* ChameleonEnums.h */,
+				A225FCFF335A4415B7F1FEC97EC4BF68 /* ChameleonMacros.h */,
+				6162B655104AB94C4EFFF6CF475C493C /* NSArray+Chameleon.h */,
+				3D01FF5354D02E3596394213DB26462F /* NSArray+Chameleon.m */,
+				2EFF3353D40704E323A7D284E044A543 /* UIAppearance+Swift.h */,
+				0F4E8DD12E2D33718F270EA27429EEC5 /* UIAppearance+Swift.m */,
+				935487202921EEE8972D783B63DDC806 /* UIButton+Chameleon.h */,
+				D1DC87AC0904CA9AF1DF9B06216133B1 /* UIButton+Chameleon.m */,
+				D5C0DB6823B5874866DCDE09BF2C7DDA /* UIColor+Chameleon.h */,
+				3A597A62A5B633FA29769DA171083410 /* UIColor+Chameleon.m */,
+				5DD4139979308ACDB3313FC473342C6F /* UIColor+ChameleonPrivate.h */,
+				71628C13400EF04CD9E67A9B562C29A4 /* UIColor+ChameleonPrivate.m */,
+				01DD3C185CE7B2874A264C92EF8C135F /* UIImage+ChameleonPrivate.h */,
+				1B6D2086D80B1E6364E18FDF8DCE29AD /* UIImage+ChameleonPrivate.m */,
+				E6B2480A4149FA183BFEAA2C974BDF0A /* UILabel+Chameleon.h */,
+				7636252ECF7F061C84697F381B313500 /* UILabel+Chameleon.m */,
+				D761F64AB31447468D85FEE552E6DC2F /* UINavigationController+Chameleon.h */,
+				2CE6AA16EF10215FE66328A3183EB6C8 /* UINavigationController+Chameleon.m */,
+				EE482F0689B2EA09E73ABBB416E95772 /* UIView+ChameleonPrivate.h */,
+				54AD696C44A2ECD5B854E80B1264BD24 /* UIView+ChameleonPrivate.m */,
+				081C127D5F2DF672F7A410C5160E6527 /* UIViewController+Chameleon.h */,
+				1E01FCF7B04283D4F02E60165FB80FBB /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		40B66EF2EF6A0AB0DC1B10979C750F46 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				530D8AF1894D10BDBB928F9CDE76025E /* Pods-MusicGo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		530D8AF1894D10BDBB928F9CDE76025E /* Pods-MusicGo */ = {
+			isa = PBXGroup;
+			children = (
+				0804A4009661C29AC650067A9214565D /* Info.plist */,
+				2A469890267CD9CC761DA30A7C7A8268 /* Pods-MusicGo.modulemap */,
+				1B07CB40F64F2C7A5BF669C29424EA22 /* Pods-MusicGo-acknowledgements.markdown */,
+				BB0D6F92BAE0A909390DE8CBB890BD68 /* Pods-MusicGo-acknowledgements.plist */,
+				E6BB80F8D16D5368395EB39FA05B90A0 /* Pods-MusicGo-dummy.m */,
+				B78F53EB980675B3D112DE76CF81AF96 /* Pods-MusicGo-frameworks.sh */,
+				14D4C6D40CA81A5EC373AE997B6A6A45 /* Pods-MusicGo-resources.sh */,
+				88DF6F705E0CF5F801D5867442B62628 /* Pods-MusicGo-umbrella.h */,
+				3EEBF0493650CC261A000F6134D03B67 /* Pods-MusicGo.debug.xcconfig */,
+				BEE9AC0D1A5C46F3D8A4D4D57A8961A0 /* Pods-MusicGo.release.xcconfig */,
+			);
+			name = "Pods-MusicGo";
+			path = "Target Support Files/Pods-MusicGo";
+			sourceTree = "<group>";
+		};
+		589E0708F042DAAF33B6FA42C2E32884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B4C0EC9C74CFDDC338B34E78A9442C7 /* ChameleonFramework */,
+				F19D7E3741D89694A4B87CBEA6D85808 /* SWRevealViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AE399A7DEE1FE8090AD901FE6FBF1AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8272E1CBCBC8D2187FA2FA13346E0CB5 /* ChameleonFramework.modulemap */,
+				4394005D184980610C967D8C94DA097F /* ChameleonFramework.xcconfig */,
+				710D84501966AD4EEF3D0AB50D80A8C8 /* ChameleonFramework-dummy.m */,
+				92A118F01AF6874B8876E056C8F62A99 /* ChameleonFramework-prefix.pch */,
+				1C1F7B9B04EB412630CF9C7C2FDABDBD /* ChameleonFramework-umbrella.h */,
+				2AEA8A8F3C1559076442033EA5E7619A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				589E0708F042DAAF33B6FA42C2E32884 /* Pods */,
+				95640C8E8EFF8FF34385D82BC85B3643 /* Products */,
+				40B66EF2EF6A0AB0DC1B10979C750F46 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		95640C8E8EFF8FF34385D82BC85B3643 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				ECA333D8A5643D50CA8DB34CFEA9BDD9 /* ChameleonFramework.framework */,
+				2C523D88CD8468A10DBE14E2DF9561BE /* Pods_MusicGo.framework */,
+				B51BB480013AD3796DB628359C8D4E03 /* SWRevealViewController.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B4C0EC9C74CFDDC338B34E78A9442C7 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				24A4B5A23679A86E7DF2DC0819E50708 /* Default */,
+				5AE399A7DEE1FE8090AD901FE6FBF1AB /* Support Files */,
+				CA64D62F921339DA03BC4466BDC9C17C /* Swift */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		A9203A0FF197B8764CD853B6EE3A159E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */,
+				CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */,
+				0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */,
+				ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CA64D62F921339DA03BC4466BDC9C17C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4F807134A6882B9C02D3129387447B13 /* ChameleonShorthand.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		F19D7E3741D89694A4B87CBEA6D85808 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1BDCADD01F043DFE89A31FA5D7286FC /* SWRevealViewController.h */,
+				EB6A774231562A3EC3AEADCBA5E52E93 /* SWRevealViewController.m */,
+				1DFC539C0A3BF70BDD6B412ADF9C9D43 /* Support Files */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53D97F5EE23F1F2B3D29C5D05578640F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44E738F58267D5639420D9AF28153B1 /* Pods-MusicGo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59890BED3AF6CEBA2D3BC9A5C45EFBA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */,
+				738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */,
+				097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */,
+				4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */,
+				64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */,
+				5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */,
+				FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */,
+				B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */,
+				C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */,
+				CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */,
+				4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */,
+				7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */,
+				00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */,
+				6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */,
+				D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */,
+				AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D599D7FE3D149CEDF37267AE0B4A097D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF9E913947134DCEC57958453772402 /* SWRevealViewController-umbrella.h in Headers */,
+				5AB75030A78AD777F2F54A3E3149E031 /* SWRevealViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E21BC30675BE10E5FB0192B03002EA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
+			buildPhases = (
+				A007306A9F7EAF30B21BFDB4E741628B /* Sources */,
+				FC1A73E30C8322A70D5DCD63B04CAE84 /* Frameworks */,
+				59890BED3AF6CEBA2D3BC9A5C45EFBA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonFramework;
+			productName = ChameleonFramework;
+			productReference = ECA333D8A5643D50CA8DB34CFEA9BDD9 /* ChameleonFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5CC1484528A6C6EEAD592323868741CC /* SWRevealViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F9563CB85358B9A009B2D0702F5390 /* Build configuration list for PBXNativeTarget "SWRevealViewController" */;
+			buildPhases = (
+				11F09017CEAE51E295ACB864A70BC1C3 /* Sources */,
+				A7F1B86793FEDDE5CB7E0B341EA27E24 /* Frameworks */,
+				D599D7FE3D149CEDF37267AE0B4A097D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWRevealViewController;
+			productName = SWRevealViewController;
+			productReference = B51BB480013AD3796DB628359C8D4E03 /* SWRevealViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7624A4A7F2C40D464128446C71549423 /* Pods-MusicGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CBB15AD980C331001D9FBC30E9757DB /* Build configuration list for PBXNativeTarget "Pods-MusicGo" */;
+			buildPhases = (
+				AEB25C08B49B429DC3FA80E471A366AD /* Sources */,
+				C23DC2C0D2254BB6FB036D1D7EA90D33 /* Frameworks */,
+				53D97F5EE23F1F2B3D29C5D05578640F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C3004BB8657CD6C89078A425C39EB5 /* PBXTargetDependency */,
+				78F73D683EDF7807DE8169545E3410BC /* PBXTargetDependency */,
+			);
+			name = "Pods-MusicGo";
+			productName = "Pods-MusicGo";
+			productReference = 2C523D88CD8468A10DBE14E2DF9561BE /* Pods_MusicGo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,15 +445,158 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = 95640C8E8EFF8FF34385D82BC85B3643 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */,
+				7624A4A7F2C40D464128446C71549423 /* Pods-MusicGo */,
+				5CC1484528A6C6EEAD592323868741CC /* SWRevealViewController */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		11F09017CEAE51E295ACB864A70BC1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EFE32527A3AB3B1EA032D159B09470 /* SWRevealViewController-dummy.m in Sources */,
+				8828987A749F59E8A7B841F9B280C176 /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A007306A9F7EAF30B21BFDB4E741628B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */,
+				1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */,
+				E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */,
+				A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */,
+				24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */,
+				D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */,
+				A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */,
+				01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */,
+				E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */,
+				15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */,
+				9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */,
+				4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */,
+				C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */,
+				5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB25C08B49B429DC3FA80E471A366AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B1EB0240CF213D1230D97A85D6830D /* Pods-MusicGo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13C3004BB8657CD6C89078A425C39EB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */;
+			targetProxy = C326BEC960874B64BD3FF72D3609D87A /* PBXContainerItemProxy */;
+		};
+		78F73D683EDF7807DE8169545E3410BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWRevealViewController;
+			target = 5CC1484528A6C6EEAD592323868741CC /* SWRevealViewController */;
+			targetProxy = 0B8B5EFDEEED79267646B493CA00ED2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1112B1795A11DFE8B5F480F63953FF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3D7A3DA99D211D1F6FAE7FA0EBBE6C /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		697CD75ADD882587F2CC9FFED8FFA95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE9AC0D1A5C46F3D8A4D4D57A8961A0 /* Pods-MusicGo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusicGo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusicGo/Pods-MusicGo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MusicGo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B636D1CDDC59C3FC520ECDB8632B6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3D7A3DA99D211D1F6FAE7FA0EBBE6C /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -107,6 +636,33 @@
 			};
 			name = Debug;
 		};
+		A74EEC168B2AAA21C2BF9BF0BE1DF3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4394005D184980610C967D8C94DA097F /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -141,6 +697,65 @@
 			};
 			name = Release;
 		};
+		D3D9BA1445AC242CFA9771307A17DBCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4394005D184980610C967D8C94DA097F /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA86CFB2E22834A83A7E9153A5B0853D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EEBF0493650CC261A000F6134D03B67 /* Pods-MusicGo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusicGo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusicGo/Pods-MusicGo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MusicGo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -149,6 +764,33 @@
 			buildConfigurations = (
 				8D1534490D941DCA47C62AC4314182AF /* Debug */,
 				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E21BC30675BE10E5FB0192B03002EA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D9BA1445AC242CFA9771307A17DBCB /* Debug */,
+				A74EEC168B2AAA21C2BF9BF0BE1DF3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CBB15AD980C331001D9FBC30E9757DB /* Build configuration list for PBXNativeTarget "Pods-MusicGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA86CFB2E22834A83A7E9153A5B0853D /* Debug */,
+				697CD75ADD882587F2CC9FFED8FFA95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F9563CB85358B9A009B2D0702F5390 /* Build configuration list for PBXNativeTarget "SWRevealViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B636D1CDDC59C3FC520ECDB8632B6AC /* Debug */,
+				1112B1795A11DFE8B5F480F63953FF38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

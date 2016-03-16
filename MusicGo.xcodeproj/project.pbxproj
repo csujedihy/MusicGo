@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78758E6E4A48F187D39E509B /* Pods_MusicGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAF23E0E58EA399F08BD46D /* Pods_MusicGo.framework */; };
+		C17617861C98DF0F008412EB /* YYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617851C98DF0F008412EB /* YYZButton.swift */; };
+		C17617881C98FFA2008412EB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17617871C98FFA2008412EB /* RecordViewController.swift */; };
 		C17AABF41C98D99C00CC83CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AABF31C98D99C00CC83CF /* AppDelegate.swift */; };
 		C17AABF91C98D99C00CC83CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17AABF71C98D99C00CC83CF /* Main.storyboard */; };
 		C17AABFB1C98D99C00CC83CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17AABFA1C98D99C00CC83CF /* Assets.xcassets */; };
 		C17AABFE1C98D99C00CC83CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17AABFC1C98D99C00CC83CF /* LaunchScreen.storyboard */; };
 		C17AAC091C98DC1400CC83CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AAC081C98DC1400CC83CF /* MainViewController.swift */; };
+		C17AAC0D1C98DE6B00CC83CF /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AAC0B1C98DE6B00CC83CF /* ColorTheme.swift */; };
+		C17AAC0E1C98DE6B00CC83CF /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AAC0C1C98DE6B00CC83CF /* ViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		378DDFCD41E7AE25E1905B66 /* Pods-MusicGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicGo/Pods-MusicGo.release.xcconfig"; sourceTree = "<group>"; };
+		C17617851C98DF0F008412EB /* YYZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYZButton.swift; sourceTree = "<group>"; };
+		C17617871C98FFA2008412EB /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		C17AABF01C98D99C00CC83CF /* MusicGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AABF31C98D99C00CC83CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17AABF81C98D99C00CC83CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		C17AABFD1C98D99C00CC83CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17AABFF1C98D99C00CC83CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17AAC081C98DC1400CC83CF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C17AAC0B1C98DE6B00CC83CF /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		C17AAC0C1C98DE6B00CC83CF /* ViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		EE7F0AAF01AB5E006F2D185C /* Pods-MusicGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicGo/Pods-MusicGo.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAF23E0E58EA399F08BD46D /* Pods_MusicGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78758E6E4A48F187D39E509B /* Pods_MusicGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59FA1F03EE47774A2176B5CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE7F0AAF01AB5E006F2D185C /* Pods-MusicGo.debug.xcconfig */,
+				378DDFCD41E7AE25E1905B66 /* Pods-MusicGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C17AABE71C98D99C00CC83CF = {
 			isa = PBXGroup;
 			children = (
 				C17AABF21C98D99C00CC83CF /* MusicGo */,
 				C17AABF11C98D99C00CC83CF /* Products */,
+				59FA1F03EE47774A2176B5CA /* Pods */,
+				F5C1F33641A89F9582FFF87A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				C17AAC081C98DC1400CC83CF /* MainViewController.swift */,
+				C17617871C98FFA2008412EB /* RecordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -78,6 +103,7 @@
 		C17AAC061C98DA3400CC83CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C17617851C98DF0F008412EB /* YYZButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -92,8 +118,18 @@
 		C17AAC0A1C98DC6700CC83CF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C17AAC0B1C98DE6B00CC83CF /* ColorTheme.swift */,
+				C17AAC0C1C98DE6B00CC83CF /* ViewExt.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F5C1F33641A89F9582FFF87A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEAF23E0E58EA399F08BD46D /* Pods_MusicGo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C17AAC021C98D99C00CC83CF /* Build configuration list for PBXNativeTarget "MusicGo" */;
 			buildPhases = (
+				C3599EB78B28CEF0903E9BC1 /* Check Pods Manifest.lock */,
 				C17AABEC1C98D99C00CC83CF /* Sources */,
 				C17AABED1C98D99C00CC83CF /* Frameworks */,
 				C17AABEE1C98D99C00CC83CF /* Resources */,
+				DB9D9ED6153B087ED302E0B9 /* Embed Pods Frameworks */,
+				27CC4407B9E92075371AB399 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,11 +202,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27CC4407B9E92075371AB399 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicGo/Pods-MusicGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3599EB78B28CEF0903E9BC1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9D9ED6153B087ED302E0B9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicGo/Pods-MusicGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C17AABEC1C98D99C00CC83CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17617861C98DF0F008412EB /* YYZButton.swift in Sources */,
+				C17AAC0E1C98DE6B00CC83CF /* ViewExt.swift in Sources */,
+				C17AAC0D1C98DE6B00CC83CF /* ColorTheme.swift in Sources */,
+				C17617881C98FFA2008412EB /* RecordViewController.swift in Sources */,
 				C17AABF41C98D99C00CC83CF /* AppDelegate.swift in Sources */,
 				C17AAC091C98DC1400CC83CF /* MainViewController.swift in Sources */,
 			);
@@ -278,6 +369,7 @@
 		};
 		C17AAC031C98D99C00CC83CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7F0AAF01AB5E006F2D185C /* Pods-MusicGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MusicGo/Info.plist;
@@ -289,6 +381,7 @@
 		};
 		C17AAC041C98D99C00CC83CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378DDFCD41E7AE25E1905B66 /* Pods-MusicGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MusicGo/Info.plist;
@@ -317,6 +410,7 @@
 				C17AAC041C98D99C00CC83CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

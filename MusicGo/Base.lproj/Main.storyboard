@@ -17,19 +17,165 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MusicGo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-Pg-9i7">
-                                <rect key="frame" x="126" y="77" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MusicGo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-Pg-9i7">
+                                <rect key="frame" x="99.5" y="77" width="121" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C0-8g-SXL" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
+                                <rect key="frame" x="93" y="179" width="133" height="35"/>
+                                <color key="backgroundColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="AQV-ts-pGz"/>
+                                    <constraint firstAttribute="height" constant="35" id="j2Q-4W-G0Q"/>
+                                </constraints>
+                                <state key="normal" title="Create Music">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createOnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5g-zM-ljM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3b-Pl-lN9" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
+                                <rect key="frame" x="93" y="270" width="133" height="35"/>
+                                <color key="backgroundColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Browse Music">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="browseOnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UI6-0r-iYP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pVZ-Pg-9i7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="1qs-6Q-dSQ"/>
+                            <constraint firstItem="H3b-Pl-lN9" firstAttribute="width" secondItem="6C0-8g-SXL" secondAttribute="width" id="81w-as-PaO"/>
+                            <constraint firstItem="H3b-Pl-lN9" firstAttribute="height" secondItem="6C0-8g-SXL" secondAttribute="height" id="EjR-uc-y81"/>
+                            <constraint firstItem="H3b-Pl-lN9" firstAttribute="top" secondItem="6C0-8g-SXL" secondAttribute="bottom" constant="56" id="Jom-ma-eoD"/>
+                            <constraint firstItem="6C0-8g-SXL" firstAttribute="top" secondItem="pVZ-Pg-9i7" secondAttribute="bottom" constant="67" id="Mf8-hi-h0b"/>
+                            <constraint firstItem="pVZ-Pg-9i7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="biA-BR-mtb"/>
+                            <constraint firstItem="6C0-8g-SXL" firstAttribute="centerX" secondItem="pVZ-Pg-9i7" secondAttribute="centerX" id="rhe-e4-eHp"/>
+                            <constraint firstItem="H3b-Pl-lN9" firstAttribute="centerX" secondItem="6C0-8g-SXL" secondAttribute="centerX" id="zXz-xM-GC0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="pVZ-Pg-9i7" id="0xs-fO-0Fr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="393"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="EgI-JH-VoL">
+            <objects>
+                <viewController id="Jrf-2X-yaf" customClass="RecordViewController" customModule="MusicGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IEN-KP-qHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ESo-Og-IQh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ltq-OB-Ywi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-qK-4ct">
+                                <rect key="frame" x="20" y="77" width="280" height="433"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="433" id="Xiq-bi-FVm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69j-6y-pxe" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
+                                <rect key="frame" x="121" y="518" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="P5T-2F-lYl"/>
+                                    <constraint firstAttribute="height" constant="30" id="iyK-9V-2vV"/>
+                                </constraints>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordOnTap:" destination="Jrf-2X-yaf" eventType="touchUpInside" id="xx6-Ly-gcE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zot-qK-4ct" firstAttribute="top" secondItem="IEN-KP-qHB" secondAttribute="bottom" constant="13" id="1TP-9N-Tc7"/>
+                            <constraint firstItem="69j-6y-pxe" firstAttribute="top" secondItem="Zot-qK-4ct" secondAttribute="bottom" constant="8" id="2kY-1O-ibl"/>
+                            <constraint firstAttribute="trailing" secondItem="Zot-qK-4ct" secondAttribute="trailing" constant="20" id="8ge-CE-NWf"/>
+                            <constraint firstItem="Zot-qK-4ct" firstAttribute="leading" secondItem="ltq-OB-Ywi" secondAttribute="leading" constant="20" id="hLD-Eh-8jz"/>
+                            <constraint firstItem="69j-6y-pxe" firstAttribute="centerX" secondItem="ltq-OB-Ywi" secondAttribute="centerX" id="u8v-Rf-Z8w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R7i-3J-0Rh">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="gm7-Mq-Hlj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="fxk-u2-Nna"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraView" destination="Zot-qK-4ct" id="16b-qU-UfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RM-2E-Bcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="393"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tt9-uj-Bkb">
+            <objects>
+                <viewController id="Up1-TK-zc6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qno-es-efk"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUF-J2-wAt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nj4-vt-mLH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4h0-AR-wjI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XF0-t7-PNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="1044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eao-0z-0eD">
+            <objects>
+                <navigationController storyboardIdentifier="CreateNavController" automaticallyAdjustsScrollViewInsets="NO" id="J5Z-p7-GfS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TMT-cN-q10">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jrf-2X-yaf" kind="relationship" relationship="rootViewController" id="xIM-Qu-za6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Oy-vU-s8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="393"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YRi-rq-InD">
+            <objects>
+                <navigationController storyboardIdentifier="BrowseNavController" automaticallyAdjustsScrollViewInsets="NO" id="msI-kV-TM6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JcQ-u6-NJc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Up1-TK-zc6" kind="relationship" relationship="rootViewController" id="ar9-5a-zS3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfE-7I-PPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="1044"/>
         </scene>
     </scenes>
 </document>

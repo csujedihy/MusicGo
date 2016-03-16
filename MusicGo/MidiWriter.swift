@@ -38,10 +38,10 @@ class MidiWriter {
         let lenOfEvents: UInt32 = UInt32(littleEndian: trackLength)
         var goesIn: [UInt32] = [UInt32(bigEndian: 0x4d54726b), UInt32(bigEndian: lenOfEvents)]
         data?.appendBytes(&goesIn, length: sizeof(UInt32) * goesIn.count)
-        var pianoBytes: [UInt32] = [UInt32(bigEndian: 0x00ff040a), UInt32(bigEndian: 0x41636f75), UInt32(bigEndian: 0x5069616e)]
-        var lastByte: UInt16 = UInt16(bigEndian: 0x6f32)
+        var pianoBytes: [UInt32] = [UInt32(bigEndian: 0x00ff2001)]
+        var lastByte: UInt8 = UInt8(0x0A)
         data?.appendBytes(&pianoBytes, length: sizeof(UInt32) * pianoBytes.count)
-        data?.appendBytes(&lastByte, length: sizeof(UInt16))
+        data?.appendBytes(&lastByte, length: sizeof(UInt8))
         data?.appendData(track!)
         var endMark: UInt32 = UInt32(bigEndian: 0x00ff2f00)
         data?.appendBytes(&endMark, length: sizeof(UInt32))
@@ -50,7 +50,7 @@ class MidiWriter {
     
     func writeEvent(tick: UInt8, note: UInt8, velocity: UInt8) {
         let tickByte: UInt8 = UInt8(tick)
-        let functionByte:UInt8 = UInt8(0x90)
+        let functionByte:UInt8 = UInt8(0x99)
         let noteByte: UInt8 = UInt8(note)
         let velocityByte: UInt8 = UInt8(velocity)
         var bytes: [UInt8] = [tickByte, functionByte, noteByte, velocityByte]

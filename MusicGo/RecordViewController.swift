@@ -117,7 +117,7 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
         let tmpColor:UIColor = bufferedImage.averageColor()
         let rValue = UInt8(CGColorGetComponents(tmpColor.CGColor)[0] * 128)
-        let gValue = UInt8(CGColorGetComponents(tmpColor.CGColor)[1] * 128)
+        let gValue = UInt8(CGColorGetComponents(tmpColor.CGColor)[1] * 250)
         midiFile!.writeEvent(127, note: rValue, velocity: gValue)
         dispatch_async(dispatch_get_main_queue()) {
             self.cameraView.image = bufferedImage

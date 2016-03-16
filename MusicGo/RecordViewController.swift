@@ -15,8 +15,8 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     var previewLayer : AVCaptureVideoPreviewLayer?
     var captureDevice : AVCaptureDevice?
     var videoCaptureOutput = AVCaptureVideoDataOutput()
-    
     let captureSession = AVCaptureSession()
+    
     @IBOutlet weak var cameraView: UIImageView!
     
     @IBAction func recordOnTap(sender: AnyObject) {
@@ -41,7 +41,6 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     }
     
     func beginSession() {
-        let captureSession = AVCaptureSession()
         captureSession.sessionPreset = AVCaptureSessionPresetPhoto
         
         let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)

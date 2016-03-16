@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MusicGo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-Pg-9i7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MusicGo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-Pg-9i7">
                                 <rect key="frame" x="99.5" y="77" width="121" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C0-8g-SXL" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C0-8g-SXL" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
                                 <rect key="frame" x="93" y="179" width="133" height="35"/>
                                 <color key="backgroundColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -37,7 +37,7 @@
                                     <action selector="createOnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5g-zM-ljM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3b-Pl-lN9" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3b-Pl-lN9" customClass="YYZButton" customModule="MusicGo" customModuleProvider="target">
                                 <rect key="frame" x="93" y="270" width="133" height="35"/>
                                 <color key="backgroundColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Browse Music">
@@ -60,6 +60,7 @@
                             <constraint firstItem="H3b-Pl-lN9" firstAttribute="centerX" secondItem="6C0-8g-SXL" secondAttribute="centerX" id="zXz-xM-GC0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ms4-Ks-p9M"/>
                     <connections>
                         <outlet property="titleLabel" destination="pVZ-Pg-9i7" id="0xs-fO-0Fr"/>
                     </connections>
@@ -112,7 +113,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="R7i-3J-0Rh">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="gm7-Mq-Hlj"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="fxk-u2-Nna"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="fxk-u2-Nna">
+                            <connections>
+                                <segue destination="M41-1N-J8D" kind="push" id="zyg-Xz-GzK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cameraView" destination="Zot-qK-4ct" id="16b-qU-UfP"/>
@@ -122,6 +127,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RM-2E-Bcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1125" y="393"/>
+        </scene>
+        <!--Player Controller-->
+        <scene sceneID="Zp1-KM-wn1">
+            <objects>
+                <viewController id="M41-1N-J8D" customClass="playerController" customModule="MusicGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVp-AJ-cHY"/>
+                        <viewControllerLayoutGuide type="bottom" id="uKh-hq-nxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cFM-tJ-tPC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-Un-eMn">
+                                <rect key="frame" x="144" y="452" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopPlaying:" destination="M41-1N-J8D" eventType="touchUpInside" id="L5u-PM-CNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-cS-gIN">
+                                <rect key="frame" x="145" y="383" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="M41-1N-J8D" eventType="touchUpInside" id="qNL-TH-kV1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wp0-D3-oEU"/>
+                    <connections>
+                        <outlet property="playButton" destination="IM5-cS-gIN" id="dJ6-Kc-24j"/>
+                        <outlet property="stopButton" destination="qz9-Un-eMn" id="n1H-gi-fip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bU-T3-5fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="393"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tt9-uj-Bkb">

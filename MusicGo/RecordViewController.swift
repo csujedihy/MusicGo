@@ -9,9 +9,16 @@
 import UIKit
 import AVFoundation
 import CoreMedia
+import CoreGraphics
+import CoreImage
+import CoreMotion
 
 
 class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    //motion controller
+    lazy var motionManager = CMMotionManager()
+    
     var previewLayer : AVCaptureVideoPreviewLayer?
     var captureDevice : AVCaptureDevice?
     var videoCaptureOutput = AVCaptureVideoDataOutput()
@@ -90,6 +97,9 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         captureSession.startRunning()
     }
     
+    
+    
+    
     // Frame buffer capture delegate. Write your image filtering algorithm here to get music characters.
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
         let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
@@ -98,7 +108,10 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
         let bufferedImage = UIImage(CGImage: context.createCGImage(cameraImage, fromRect: cameraImage.extent))
         
-        print(bufferedImage.getPixelColor(CGPoint(x: 5.0, y: 5.0)))
+        //print(bufferedImage.getPixelColor(CGPoint(x: 5.0, y: 5.0)))
+        
+        let tmpColor:UIColor = bufferedImage.averageColor()
+        print(tmpColor.hexValue())
         dispatch_async(dispatch_get_main_queue()) {
             self.cameraView.image = bufferedImage
         }
@@ -109,6 +122,27 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        motionManager.accelerometerUpdateInterval = 0.1
+        motionManager.stopAccelerometerUpdates()
+        if motionManager.accelerometerAvailable{
+            let queue = NSOperationQueue()
+            motionManager.startAccelerometerUpdatesToQueue(queue, withHandler:
+                {data, error in
+                    
+                    guard let data = data else{
+                        return
+                    }
+                    let acc = sqrt(data.acceleration.x * data.acceleration.x + data.acceleration.y * data.acceleration.y + data.acceleration.z * data.acceleration.z)
+                    print("\(acc)")
+//                    print("Y = \(data.acceleration.y)")
+//                    print("Z = \(data.acceleration.z)")
+                    
+                }
+            )
+        } else {
+            print("Accelerometer is not available")
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

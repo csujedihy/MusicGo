@@ -24,5 +24,44 @@ extension UIImage {
         let a = CGFloat(data[pixelInfo+3]) / CGFloat(255.0)
         
         return UIColor(red: r, green: g, blue: b, alpha: a)
-    }  
+    }
+    
+    
+    func averageColor() -> UIColor {
+        
+//        print(self.size.width)
+//        print(self.size.height)
+        var width:Int = 0
+        var height:Int = 0
+        width = Int(CGFloat(self.size.width) / CGFloat(1.0))
+        height = Int(CGFloat(self.size.height) / CGFloat(1.0))
+        
+        var sum_r:CGFloat = 0
+        var sum_g:CGFloat = 0
+        var sum_b:CGFloat = 0
+        var sum_a:CGFloat = 0
+        
+        var tmpColor:UIColor
+        for var i = 0; i < height; i = i + 10 {
+            for var j = 0; j < width; j = j + 10 {
+                        tmpColor = self.getPixelColor(CGPoint(x: j, y: i))
+                        sum_r += CGColorGetComponents(tmpColor.CGColor)[0]
+                        sum_g += CGColorGetComponents(tmpColor.CGColor)[1]
+                        sum_b += CGColorGetComponents(tmpColor.CGColor)[2]
+                        sum_a += CGColorGetComponents(tmpColor.CGColor)[3]
+                    }
+                }
+        
+        sum_r = sum_r / CGFloat(width * height / 100)
+//        print(sum_r)
+        sum_g = sum_g / CGFloat(width * height / 100)
+        sum_b = sum_b / CGFloat(width * height / 100)
+        sum_a = sum_a / CGFloat(width * height / 100)
+        
+        
+        return UIColor(red: sum_r, green: sum_g, blue: sum_b, alpha: sum_a)
+        
+    }
+    
+    
 }

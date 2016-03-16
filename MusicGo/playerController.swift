@@ -57,6 +57,13 @@ class playerController: UIViewController {
 
     @IBAction func playAudio(sender: AnyObject) {
         
+        if playButton.imageView!.image == UIImage(named: "play.png") {
+            //recordButton.setTitle("Stop", forState: .Normal)
+            playButton.setImage(UIImage(named: "pause.png"), forState: UIControlState.Normal)
+        } else {
+            playButton.setImage(UIImage(named: "play.png"), forState: UIControlState.Normal)
+        }
+        
         /*var pitchPlayer = AVAudioPlayerNode()
         var timePitch = AVAudioUnitTimePitch()
         timePitch.pitch = 1000
@@ -78,9 +85,10 @@ class playerController: UIViewController {
 //            self.midiPlayer.currentPosition = 0
 //            self.timer?.invalidate()
 //        })
+        
     }
-
-    @IBAction func stopPlaying(sender: AnyObject) {
+  
+   @IBAction func stopPlaying(sender: AnyObject) {
         
         sound.stopPlaying()
     }

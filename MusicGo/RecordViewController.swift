@@ -28,8 +28,10 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     @IBOutlet weak var cameraView: UIImageView!
     
     @IBAction func recordOnTap(sender: AnyObject) {
-        if recordButton.titleLabel?.text == "Record" {
-            recordButton.setTitle("Stop", forState: .Normal)
+        
+        if recordButton.imageView!.image == UIImage(named: "butt-off.png") {
+            //recordButton.setTitle("Stop", forState: .Normal)
+            recordButton.setImage(UIImage(named: "butt-on.png"), forState: UIControlState.Normal)
             captureSession.sessionPreset = AVCaptureSessionPreset640x480
             let devices = AVCaptureDevice.devices()
             midiFile = MidiWriter()
@@ -60,8 +62,8 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             midiFile?.writeTrackInfo()
             midiFile?.output()
             captureSession.stopRunning()
-            recordButton.setTitle("Record", forState: .Normal)
-
+            //recordButton.setTitle("Record", forState: .Normal)
+            recordButton.setImage(UIImage(named: "butt-off.png"), forState: .Normal)
         
         }
 
@@ -125,6 +127,7 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         motionManager.accelerometerUpdateInterval = 0.1
         motionManager.stopAccelerometerUpdates()

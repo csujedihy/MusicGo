@@ -59,9 +59,9 @@ class Sound {
     func stopPlaying() {
         if midiPlayer.playing {
             midiPlayer.stop()
-            self.midiPlayer.currentPosition = 0
             self.timer?.invalidate()
         }
+        self.midiPlayer.currentPosition = 0
     }
     
     func togglePlaying() {

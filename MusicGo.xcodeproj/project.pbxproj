@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					C17AABEF1C98D99C00CC83CF = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = F697GBXU4H;
+						DevelopmentTeam = U5773CT6MK;
 					};
 				};
 			};
@@ -412,7 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.c2fun.MusicGo;
+				PRODUCT_BUNDLE_IDENTIFIER = wukochin.MusicGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -427,7 +427,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.c2fun.MusicGo;
+				PRODUCT_BUNDLE_IDENTIFIER = wukochin.MusicGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

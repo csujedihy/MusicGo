@@ -111,7 +111,7 @@ class RecordViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         let cameraImage = CIImage(CVPixelBuffer: pixelBuffer!)
         let context = CIContext()
         
-        let bufferedImage = UIImage(CGImage: context.createCGImage(cameraImage, fromRect: cameraImage.extent))
+        let bufferedImage = UIImage(CGImage: context.createCGImage(cameraImage, fromRect: cameraImage.extent), scale: 1.0, orientation: UIImageOrientation.Right)
         
         //print(bufferedImage.getPixelColor(CGPoint(x: 5.0, y: 5.0)))
         

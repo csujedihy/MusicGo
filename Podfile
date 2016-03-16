@@ -4,6 +4,7 @@
 use_frameworks!
 
 target 'MusicGo' do
-
+    pod 'SWRevealViewController'
+    pod 'ChameleonFramework/Swift'
 end
 
